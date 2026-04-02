@@ -447,6 +447,7 @@
         <option value="Chest">Chest</option>
         <option value="Item">Item</option>
         <option value="Trap">Trap</option>
+        <option value="Stair">Stair</option>
       </select>
       <div style="margin-top:8px; font-family:var(--font-mono); font-size:10px; color:var(--text-dim)">
         Select type then click a cell
@@ -499,7 +500,7 @@ const CONN_TYPES = ['path', 'door', 'closed', 'open'];
 const DIRECTIONS = ['Up', 'Down', 'Left', 'Right'];
 const OPPOSITE   = { Up: 'Down', Down: 'Up', Left: 'Right', Right: 'Left' };
 const MIRROR_RULES = { path: 'path', door: 'door', closed: 'open', open: 'closed' };
-const CONTAIN_ICONS = { Enemy: 'E', NPC: 'V', Chest: 'C', Item: 'L', Trap: 'T' };
+const CONTAIN_ICONS = { Enemy: 'E', NPC: 'V', Chest: 'C', Item: 'L', Trap: 'T' , Stair: 'S'};
 
 let mapData = createEmptyMap(10, 10);
 let selectedCell = null;
